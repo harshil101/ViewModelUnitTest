@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_tile"
+    android:layout_width="@dimen/tile_width"
+    android:layout_height="@dimen/tile_height"
+    app:cardCornerRadius="@dimen/tile_corner_radius"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/tile_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tile_frame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tile_image_height"
+            android:paddingHorizontal="@dimen/tile_border_width"
+            android:paddingTop="@dimen/tile_border_width"
+            android:layout_above="@id/bottom">
+
+            <ImageView
+                android:id="@+id/tileImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/placeHolder"
+                android:layout_width="@dimen/tile_camera_width"
+                android:layout_height="@dimen/tile_camera_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tile_camera" />
+
+            <TextView
+                android:id="@+id/tryAgainTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:fontFamily="@font/my_custom_font"
+                android:text="@string/tap_to_try_again"
+                android:textColor="@color/white"
+                android:textSize="@dimen/extra_small_font_size"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_marginHorizontal="@dimen/tile_border_width"
+            android:layout_marginBottom="@dimen/tile_border_width"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gradient_btm">
+
+            <TextView
+                android:id="@+id/imageNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/my_custom_font"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

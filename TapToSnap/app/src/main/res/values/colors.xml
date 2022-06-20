@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#FF00A9</color>
+    <color name="pink_dark">#AD1078</color>
+    <color name="gradient_top">#1395B7</color>
+    <color name="gradient_btm">#541177</color>
+    <color name="green">#8BF388</color>
+    <color name="red">#FF4545</color>
+    <color name="bg_gray">#302236</color>
+    <color name="bg_gray_dark">#271C2B</color>
+    <color name="tile_gray">#584D5D</color>
+    <color name="tile_gray_dark">#473C4D</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_gray_dark_70_percent">#B3271C2B</color>
+</resources>

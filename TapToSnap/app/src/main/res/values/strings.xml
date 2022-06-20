@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tap To Snap</string>
+    <string name="tap_to_snap">Tap to snap</string>
+    <string name="tap_to_try_again">Tap to try again</string>
+    <string name="lets_go">LET’S GO!</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="retry">Retry</string>
+    <string name="nice_job">Nice Job!</string>
+    <string name="game_over">Game Over!</string>
+    <string name="game_won">Congratulations!! You\'ve won the game!</string>
+    <string name="ran_out_of_time">You\'ve run out of time!</string>
+    <string name="restart">Restart</string>
+    <string name="exit">Exit</string>
+    <string name="time_format">00:%s</string>
+    <string name="time_zero">00:00:00</string>
+    <string name="time_over">Time over Please try again!</string>
+    <string name="time_over_title">Time Over</string>
+    <string name="try_again">Try Again</string>
+    <string name="play_again">Play Again</string>
+    <string name="close">Close</string>
+</resources>

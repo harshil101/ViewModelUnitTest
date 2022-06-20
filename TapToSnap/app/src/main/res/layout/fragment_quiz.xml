@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tile_gray_dark"
+    tools:context=".view.fragments.QuizFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_snap"
+        android:fontFamily="@font/my_custom_font"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/medium_font_size"
+        android:layout_marginTop="@dimen/margin_large"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@id/bottom"
+        tools:listitem="@layout/item_quiz_row"
+        tools:itemCount="4"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:background="@color/gradient_btm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/timer_view_height"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_custom_font"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/large_font_size"
+            android:layout_marginTop="@dimen/margin_large"/>
+
+    </RelativeLayout>
+</RelativeLayout>
